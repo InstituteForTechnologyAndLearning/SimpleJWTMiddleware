@@ -33,8 +33,8 @@
         "repositoryURL": "https://github.com/vapor/jwt.git",
         "state": {
           "branch": null,
-          "revision": "8c1681e9497b72430fa62962f61339d3573c7b0f",
-          "version": "4.0.0-rc.2"
+          "revision": "46eddb526fa70fd9d765a3bdffac73b2be487cfc",
+          "version": "4.0.0"
         }
       },
       {
@@ -42,8 +42,8 @@
         "repositoryURL": "https://github.com/vapor/jwt-kit.git",
         "state": {
           "branch": null,
-          "revision": "c4111580bbf37aefd5182a93ecb2906a216199b3",
-          "version": "4.0.0-rc.1.3"
+          "revision": "50a46ba65fa4e2c1bb3783ec7464b42232a23ee2",
+          "version": "4.1.0"
         }
       },
       {

@@ -9,10 +9,13 @@ public final class SimpleJWTMiddleware: Middleware {
         guard let token = request.headers.bearerAuthorization?.token.utf8 else {
             return request.eventLoop.makeFailedFuture(Abort(.unauthorized, reason: "Missing authorization bearer header"))
         }
-        
         #if DEBUG
+
+        guard let nilUUID = UUID(uuidString: "00000000-0000-0000-0000-000000000000") else {
+            fatalError("oops, must have typo-d that")
+        }
         if request.headers.bearerAuthorization?.token == "TEST_TOKEN" {
-            request.payload = Payload(id: 0, email: "test@account.com")
+            request.payload = Payload(id: nilUUID, email: "test@account.com")
             return next.respond(to: request)
         }
         #endif
